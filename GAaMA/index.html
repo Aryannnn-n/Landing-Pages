@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAaMA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo" alt="">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>SPECIFICATION</li>
+                <li>PRODUCTS</li>
+                <li>CONNECT</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="left">
+                <h1>THE</h1>
+                <h1>REAL</h1>
+                <h1>SOUND</h1>
+            </div>
+            <div class="right">
+                <p>Click Here To Listen</p>
+                <img src="images/play.png" alt="" id="icon">
+            </div>
+        </div>
+        <audio id="music">
+            <source src="images/Dancin (Krono Remix) - Aaron Smith, Krono.m4a" type="audio/mp3">
+        </audio>
+
+        <script>
+            let music = document.getElementById('music')
+            let icon = document.getElementById('icon')
+
+            icon.onclick = function () {
+                if (music.paused) {
+                    music.play()
+                    icon.src = "images/pause.png"
+                } else {
+                    music.pause()
+                    icon.src = "images/play.png"
+                }
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>

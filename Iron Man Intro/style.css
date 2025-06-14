@@ -1,0 +1,140 @@
+/* Boiler Plate Code */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  /* color: white; */
+}
+
+/* The main code */
+
+#main {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+}
+
+#left {
+  width: 35%;
+  height: 100%;
+  position: relative;
+}
+
+#right {
+  width: 65%;
+  height: 100%;
+  background-color: black;
+}
+
+#lnav {
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+#lnavr a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+}
+
+#lnavr i {
+  color: royalblue;
+}
+
+#left #textcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textcenter h1 {
+  /* color: black; */
+  font-size: 90px;
+  font-weight: 100;
+}
+
+#textcenter h2 {
+  margin-top: 10px;
+  opacity: 0.2;
+}
+
+#textcenter p {
+  font-size: 16px;
+  opacity: 0.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+#textcenter a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid black;
+  font-weight: 700;
+  opacity: 0.8;
+  font-size: 14px;
+}
+#rtop {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+#rbottom {
+  width: 100%;
+  height: 50%;
+  background-color: cornflowerblue;
+  background-image: url('https://getwallpapers.com/wallpaper/full/c/8/8/969993-free-tony-stark-wallpapers-1920x1080-windows-7.jpg');
+  background-size: cover;
+  background-position: unset;
+}
+
+#rtopright {
+  width: 45%;
+  height: 100%;
+  background-image: url('https://imgs.search.brave.com/jV14rjRXKj7SREs_NlP4wskYQwu9nvsxMiNEOy1FxbA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMTE2/OTM0Ni5qcGc');
+  background-size: cover;
+  background-position: center;
+}
+
+#rtopleft {
+  width: 55%;
+  height: 100%;
+  background-color: yellowgreen;
+  background-image: url('https://imgs.search.brave.com/Y4PC8L60geiG1LHJ-Vl64VhU6qBB5pih5gbWJoV9yf4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI2NjQ0/MDUuanBn');
+  background-size: cover;
+  background-position: left;
+}
+
+/* Adding Responsiveness */
+
+@media (max-width: 784px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #main #left {
+    width: 100%;
+  }
+
+  #main #right {
+    width: 100%;
+  }
+}
